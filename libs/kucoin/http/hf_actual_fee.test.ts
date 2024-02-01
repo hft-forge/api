@@ -9,8 +9,6 @@ Deno.test("Kucoin API: hf_actual_fee", async (t) => {
   await t.step("_", async () => {
     const res = await hf_actual_fee(["BTC-USDT"], credentials);
 
-    console.log(res);
-
     assert(Array.isArray(res.data));
   });
 });

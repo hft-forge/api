@@ -16,7 +16,6 @@ Deno.test({
       from: "trade",
       to: "trade_hf",
     }, credentials) as unknown as Record<string, string>;
-    console.log(res);
     // to avoid real resource transfer test make incorrect request
     // but error should be according to mistake (zero amount in this case)
     assert(res.msg === "amount must be greater than 0");
